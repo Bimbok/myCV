@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimbok Mukherjee - Contact Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #eaeaea;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bimbok Mukherjee</h1>
+        <p><em>B-Tech IT Student</em></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="contact" class="section">
+        <h2>Bimbok's Contact Info</h2>
+        <ol type="i">
+            <li><strong>Name</strong> - <em>Bimbok Mukherjee</em></li>
+            <li><strong>Phone No.</strong> - <em>+91 9434478350</em></li>
+            <li><strong>Email</strong> - <em>bratikmkj@gmail.com</em></li>
+        </ol>
+        <center>For Further Information Contact Above Number</center>
+        <hr>
+        <form action="mailto:bratikmkj@gmail.com" method="post" enctype="text/plain">
+            <label>Your Name:</label>
+            <input type="text" name="Your Name:" required>
+            <br>
+            <label>Enter Email Address:</label>
+            <input type="email" name="Your Email:" required>
+            <br>
+            <label>Your Message:</label><br>
+            <textarea name="Your Message:" rows="10" cols="30" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bimbok Mukherjee</p>
+        <a href="/index.html">Back to Home</a>
+    </footer>
+</body>
+</html>
